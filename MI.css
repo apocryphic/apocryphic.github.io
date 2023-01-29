@@ -22,7 +22,7 @@
       .anim_btn:hover{
         transform: scale(1.1);
         transition: all 0.8s;
-     cursor:url(cursor.png),pointer;
+     cursor:url(https://www.pngkit.com/png/full/26-266447_yellow-lightning-png-yellow-lightning-strike-png.png),pointer;
      background-color: rgb(54, 2, 122);
      color: rgb(0, 0, 0);
      box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
