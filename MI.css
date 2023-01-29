@@ -22,7 +22,7 @@
       .anim_btn:hover{
         transform: scale(1.1);
         transition: all 0.8s;
-     cursor:url(\cursor.png),pointer;
+     cursor:url(cursor.png),pointer;
      background-color: rgb(54, 2, 122);
      color: rgb(0, 0, 0);
      box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
@@ -184,7 +184,7 @@ transition: all 0.8s;
 cursor: grab;
 color: rgb(204, 214, 54);
 box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
-background: url(\2023-01-28214744.png);
+background: url(2023-01-28214744.png);
 animation: anim_img 0.8s ease;
  }
 
