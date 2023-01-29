@@ -1,0 +1,236 @@
+    body{
+    background-color: rgb(255, 255, 255);  
+    padding: 0;
+    margin: 0;
+
+    }
+	
+    /*  Кнопка   */
+    
+      .anim_btn { height: 75px;
+        width: 200px;
+        transition: 2s;
+        color: rgb(194, 121, 155);
+        background-color: rgb(62, 240, 240);
+        border-radius: 20%/50%;
+        border: none;
+        box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 35px;
+    
+      }
+      .anim_btn:hover{
+        transform: scale(1.1);
+        transition: all 0.8s;
+     cursor:url(cursor.png),pointer;
+     background-color: rgb(54, 2, 122);
+     color: rgb(0, 0, 0);
+     box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+     
+      }
+
+      .btn_blc {position: relative;
+        height: 50px;
+        width: 200px;
+        justify-content: center;
+        
+       
+      }
+
+      /*  Текст  */
+
+      .anim_text {
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 5em;
+        text-decoration: none;
+        background-image: -webkit-linear-gradient(90deg,#12c2e9,#c471ed,#f64f59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-color: #f64f59;
+        background-clip: text; 
+        animation:typing 3.5s steps(30, end);
+        white-space: nowrap;
+        margin: 0 auto;
+        overflow: hidden;
+        
+      }
+      
+      
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+  
+/* модальное окно */
+
+.mod{
+        position: fixed; 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5); 
+        z-index: 1050;
+        opacity: 0; 
+        transition: opacity 200ms ease-in;
+        pointer-events: none;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      .mod:target {
+        opacity: 1;
+	  pointer-events: auto;
+        overflow-y: auto; 
+    }
+
+.mod-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    }
+
+.mod-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    }
+
+.mod-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+
+
+
+.mod-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+
+
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+
+.mod-body {
+  position: relative;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+.main_blc{
+    flex-direction: column;
+        width: 100%;
+        height: 40vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+}
+
+.lk{
+border: 1px #000 hidden;
+padding: 10px 30px;
+border-radius: 20%/50%;
+width: 70px;
+height: 30px;
+display: flex;
+text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+justify-content:center ;
+margin: 10px 20px;
+font-weight: bold;
+color: white;
+position: fixed;
+transition: 1.5s;
+background-color: #000;
+align-content: center;
+flex-wrap: wrap;
+}
+ .lk:hover{
+  transform: translateX(20px);
+transition: all 0.8s;
+cursor: grab;
+color: rgb(204, 214, 54);
+box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+background: url(2023-01-28214744.png);
+animation: anim_img 0.8s ease;
+ }
+
+.fig{
+width: 0;
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid red;
+left: 20px;
+top: 200px;
+position: relative;
+}
+
+@keyframes anim_img {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
