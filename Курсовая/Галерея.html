@@ -111,9 +111,8 @@
     <div class="main">
     <header class="header">
     <div>
-        <a href="#">Головна</a>
-        <a href="#">Контакти</a>
-        <a href="#">Про село</a>
+        <a href="Курсовая.html">Головна</a>
+        <a href="Про_село.html">Про село</a>
         <a href="https://onufriivska-gromada.gov.ua/" target="_blank">Онуфрівська громада</a>
         <a href="#">Галерея</a>
     </div>
@@ -184,20 +183,10 @@
   </div>
 
   <script>
-   var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 7000); 
-}
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -225,6 +214,14 @@ function showSlides(n) {
         </div>
 
 
+    </div>
+
+
+    <footer class="fut">
+      <a href="mailto:k.landyk@gmail.com">k.andyk@gmail.com</a>
+      <a href="https://github.com/apocryphic">github</a>
+
+  </footer>
 
 
 
