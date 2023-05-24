@@ -1,0 +1,97 @@
+
+<html>
+<head>
+	<title>Приклад сторінки з розміткою TeX</title>
+	<meta charset="utf-8">
+	<script src="https://cdn.mathjax.org/mathjax/1.1-latest/MathJax.js?config=default"></script>
+	<style>
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+    .container {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 36px;
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+
+	.table {
+		border-collapse: collapse;
+		margin: 0 auto;
+	}
+
+	.table th,
+	.table td {
+		border: 1px solid #ddd;
+		padding: 10px;
+	}
+
+	.table th {
+		background-color: #f5f5f5;
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.table td {
+		font-size: 18px;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Приклад сторінки з розміткою TeX</h1>
+		<p>В даному прикладі ми представимо таблицю похідних основних елементарних функцій. Для оформлення математичних формул ми будемо використовувати розмітку TeX.</p>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Функція</th>
+					<th>Похідна</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$$f(x) = x^n$$</td>
+					<td>$$f'(x) = nx^{n-1}$$</td>
+				</tr>
+				<tr>
+					<td>$$f(x) = e^x$$</td>
+					<td>$$f'(x) = e^x$$</td>
+				</tr>
+				<tr>
+					<td>$$f(x) = \ln{x}$$</td>
+					<td>$$f'(x) = \frac{1}{x}$$</td>
+				</tr>
+				<tr>
+					<td>$$f(x) = \sin{x}$$</td>
+					<td>$$f'(x) = \cos{x}$$</td>
+				</tr>
+				<tr>
+					<td>$$f(x) = \cos{x}$$</td>
+					<td>$$f'(x) = -\sin{x}$$</td>
+				</tr>
+				<tr>
+					<td>$$f(x) = \tan{x}$$</td>
+					<td>$$f'(x) = \sec^2{x}$$</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
